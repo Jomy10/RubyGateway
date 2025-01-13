@@ -739,7 +739,7 @@ extension RbObject {
                                 argsSpec: RbMethodArgsSpec,
                                 body: @escaping RbMethodCallback,
                                 singleton: Bool) throws {
-        try name.checkRubyMethodName()
+        //try name.checkRubyMethodName()
         withRubyValue { rubyValue in
             RbMethodDispatch.defineMethod(value: rubyValue,
                                           name: name,
